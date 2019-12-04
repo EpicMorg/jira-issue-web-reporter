@@ -3,16 +3,18 @@
 
 ### Supported themes:
 
-Set theme in UI section of appsettings.json
+Set theme in UI section of appsettings.json:
 
 ```
 "UI": {
     "Theme": "default",
 ```
- of via enviroment vars:
+ of via enviroment-file vars or compose-file:
+```
+    - UI_Theme: default
+```
 
-You cah check live demos at official https://bootswatch.com/ site.
-
+Themes:
 * `cerulean`
 * `cosmo`
 * `cyborg`
@@ -35,3 +37,5 @@ You cah check live demos at official https://bootswatch.com/ site.
 * `superhero`
 * `united`
 * `yeti`
+
+You cah check live demos at official https://bootswatch.com/ site.
