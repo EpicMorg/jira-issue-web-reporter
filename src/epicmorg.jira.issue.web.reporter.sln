@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29509.3
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "epicmorg.jira.issue.web.reporter", "epicmorg.jira.issue.web.reporter\epicmorg.jira.issue.web.reporter.csproj", "{7C460FFD-D311-47F3-90CC-C42996BBB2DE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "epicmorg.jira.issue.web.reporter", "epicmorg.jira.issue.web.reporter.csproj", "{7C460FFD-D311-47F3-90CC-C42996BBB2DE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

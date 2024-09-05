@@ -1,6 +1,6 @@
 #version: '3'
 services:
   app:
-    image: "jira-issue-web-reporter-docker"
+    image: "epicmorg/jira-issue-web-reporter-docker:develop"
     build:
       context: .
