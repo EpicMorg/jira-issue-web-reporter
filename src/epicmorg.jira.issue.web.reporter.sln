@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29509.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "epicmorg.jira.issue.web.reporter", "epicmorg.jira.issue.web.reporter\epicmorg.jira.issue.web.reporter.csproj", "{7C460FFD-D311-47F3-90CC-C42996BBB2DE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7C460FFD-D311-47F3-90CC-C42996BBB2DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C460FFD-D311-47F3-90CC-C42996BBB2DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C460FFD-D311-47F3-90CC-C42996BBB2DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C460FFD-D311-47F3-90CC-C42996BBB2DE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {181F5AB3-A6E9-4ABC-AFDB-7E060CEDC759}
+	EndGlobalSection
+EndGlobal
