@@ -1,0 +1,50 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+      <!--publish config-->
+    <PublishSingleFile>false</PublishSingleFile>
+    <PublishTrimmed>false</PublishTrimmed>
+    <PublishAot>false</PublishAot>
+    <SelfContained>true</SelfContained>
+    <PublishReadyToRun>false</PublishReadyToRun>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+	
+	<!--build props-->
+    <Nullable>enable</Nullable>
+    <OutputType>Exe</OutputType>
+    <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
+    <TargetFramework>net8.0</TargetFramework>
+    <IsPackable>false</IsPackable>
+    <ApplicationIcon>favicon.ico</ApplicationIcon>
+    
+    <!--package metadata-->
+    <TargetFramework>net8.0</TargetFramework>
+    <UserSecretsId>988e0611-42e5-4c51-9300-0b75e780c73a</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <PackageId>epicmorg.jira.issue.web.reporter</PackageId>
+    <Version>2.0.0.0</Version>
+    <Authors>EpicM.org</Authors>
+    <Product>Jira issue web reporter</Product>
+    <Copyright>EpicM.org</Copyright>
+    <Description>Web-based simple issue reporter via official rest-api.</Description>
+    <AssemblyName>epicmorg.jira.issue.web.reporter</AssemblyName>
+    <RootNamespace>epicmorg.jira.issue.web.reporter</RootNamespace>
+    <ApplicationIcon>wwwroot\favicon.ico</ApplicationIcon>
+    <PackageProjectUrl>https://ww.epicm.org/</PackageProjectUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.8">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0" />
+    <PackageReference Include="Automapper" Version="13.0.1" />
+    <PackageReference Include="Atlassian.SDK" Version="13.0.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.5" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Update="appsettings.Development.json">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+</Project>

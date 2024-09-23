@@ -1,0 +1,22 @@
+﻿@inject IOptions<UiConfig> uiConfig
+
+<div class="row">
+    <div class="col-sm-6 padding-fix">
+        <div class="card border-secondary">
+            <div class="card-body">
+                <a class="btn btn-link btn-lg w-100 text-muted" asp-action="Create">
+                    <i class="fas fa-bug"></i> <span data-localize="btn-submit-new-issue">Submit New Issue</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6 padding-fix">
+        <div class="card border-secondary">
+            <div class="card-body">
+                <a class="btn btn-link btn-lg w-100 text-muted" asp-action="Check">
+                    <i class="fas fa-search"></i> <span data-localize="btn-check-report">Check Report</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
