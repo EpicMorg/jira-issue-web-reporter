@@ -6,33 +6,29 @@
         <strong>
             <i class="fas fa-hands-helping"></i> <span data-localize="message-awesome">Awesome!</span>
         </strong>
-        <span data-localize="message-reported-ok">You successfully send your report. Your issue-key is</span>:
+        <span data-localize="message-reported-ok">You successfully sent your report. Your issue-key is</span>:
         <strong>
             <a asp-action="Check" asp-route-id="@Model.IssueKey">@Model.IssueKey</a>
         </strong>.
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-        </button>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
     </div>
 }
 else
 {
     <div class="alert alert-danger alert-dismissible fade show" role="alert">
         <strong><i class="fas fa-exclamation-triangle"></i> <span data-localize="message-error">Error!</span></strong> <span data-localize="message-something-wrong">Something went wrong.</span> @Model.Message
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-        </button>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
     </div>
 }
 
 <div class="row">
     <div class="col-sm-6 padding-fix">
-        <a class="btn btn-primary btn-lg btn-block" asp-action="Create">
+        <a class="btn btn-primary btn-lg w-100" asp-action="Create">
             <i class="fas fa-bug"></i> <span data-localize="label-submit-another">Submit Another Issue</span>
         </a>
     </div>
     <div class="col-sm-6 padding-fix">
-        <a class="btn btn-primary btn-lg btn-block" asp-action="Check">
+        <a class="btn btn-primary btn-lg w-100" asp-action="Check">
             <i class="fas fa-search"></i> <span data-localize="label-check-another">Check Another Report</span>
         </a>
     </div>

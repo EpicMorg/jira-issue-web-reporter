@@ -11,6 +11,7 @@ namespace epicmorg.jira.issue.web.reporter
     using Microsoft.Extensions.Configuration;
     using Microsoft.Extensions.DependencyInjection;
     using Microsoft.Extensions.Hosting;
+    using Microsoft.Extensions.Options;
 
     public class Startup
     {
@@ -41,7 +42,9 @@ namespace epicmorg.jira.issue.web.reporter
                   .AddAntiforgery(o =>
                 {
                     o.SuppressXFrameOptionsHeader = true;
-                    o.Cookie.SameSite = SameSiteMode.None;
+                    // o.Cookie.SameSite = SameSiteMode.None;
+                    // o.Cookie.HttpOnly = true;
+                    //o.Cookie.SecurePolicy = CookieSecurePolicy.Always;
                 })
                 .AddHttpClient()
                 .AddHttpClient<ICaptchaValidator, GoogleRecaptchaValidator>();
@@ -73,8 +76,9 @@ namespace epicmorg.jira.issue.web.reporter
 
             app.UseRouting();
 
-            app.UseAuthorization();
-
+            // Some legacy
+            //app.UseAuthorization();
+           
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
